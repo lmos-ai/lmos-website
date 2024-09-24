@@ -78,11 +78,16 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/lmos-ai',
             label: 'GitHub',
             position: 'right',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'contributeSidebar',
+            position: 'left',
+            label: 'Contribute',
           },
         ],
       },
