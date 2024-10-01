@@ -1,0 +1,62 @@
+/* Main container with padding */
+.container {
+    display: flex; /* Use flexbox for layout */
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  /* Two-column flex layout */
+  .gridContainer {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  
+  /* Title container styles */
+  .titleContainer {
+    width: 30%; /* Fixed width for the title container */
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  /* Right-side container for the features */
+  .features {
+    flex-grow: 1; /* Take remaining width */
+    padding: 20px; /* Add padding if needed */
+    overflow-y: auto; /* Enable vertical scrolling if necessary */
+    max-height: 100vh; /* Max height to keep scrolling area */
+  }
+  /* Individual feature styling with flexbox for layout */
+  .feature {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Icon styling */
+  .icon {
+    font-size: 40px;
+    color: #22b455; /* Pink color for the icons */
+    flex-shrink: 0; /* Prevent icon from shrinking */
+  }
+  
+  /* Text container for the feature */
+  .text {
+    display: block; /* Ensure the text container is block-level */
+    flex-grow: 1; /* Text should take the remaining space */
+  }
+  
+  /* Title styling for each feature */
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px; /* Slight margin between title and description */
+    color: #22b455;
+    display: block; /* Ensure title is block-level */
+  }
+  
+  /* Description styling */
+  .description {
+    font-size: 16px;
+    color: #000000;
+    display: block; /* Ensure description is block-level */
+  }
