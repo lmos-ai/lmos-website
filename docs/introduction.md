@@ -5,10 +5,10 @@ sidebar_position: 1
 
 # Introduction
 
-## Our Vision
+## Our vision
 Our vision is to create a **sovereign and open platform and ecosystem for intelligent agents** that enables seamless development, deployment, and integration across various industries. This vision is realized by the **LMOS (Language Model Operating System)**, which is built on open standards and tools, allowing organizations to innovate and collaborate without the constraints of closed systems.
 
-Our commitment — Openness, Interoperability, Security, and Transparency — guides the development of our ecosystem. We believe that systems built on these principles foster collaboration and innovation, enabling seamless integration across platforms.
+Our commitment — Openness, Interoperability, Security, and Transparency — guides the development of our platform. We believe that systems built on these principles foster collaboration and innovation.
 
 **Openness:** Embrace open standards and protocols to foster collaboration, innovation, and accessibility within the intelligent agent ecosystem, over closed proprietary systems that hinder collaboration and innovation.
 
@@ -18,7 +18,35 @@ Our commitment — Openness, Interoperability, Security, and Transparency — gu
 
 **Data Privacy and Security:** Uphold robust security measures and privacy standards to protect sensitive data, ensuring user confidentiality and trustworthiness of intelligent agents, over insecure systems that compromise user privacy and expose data to unauthorized access.
 
-By aligning our development with these core principles, we aim to create a trustworthy platform, contributing to the ecosystem’s growth and fostering ongoing innovation.
+By aligning our development with these core principles, we aim to create a trustworthy and open multi-agent platform.
+
+## An open multi-agent architecture
+
+In an open multi-agent architecture, the goal is to enable seamless discovery of agent capabilities and services, while ensuring efficient communication between agents across diverse networks. The [W3C Web of Things Architecture](https://www.w3.org/TR/wot-architecture11/) provides a strong foundation for developing an open Web of Agents architecture.
+
+The key requirements for an open multi-agent architecture are:
+
+- **Agent Description Specification**  
+   A standardized format is essential for describing the capabilities and metadata of intelligent agents. This specification should offer an appropriate level of abstraction to ensure interoperability across a wide range of agent platforms and domains.
+
+- **Agent Discovery Process**  
+   A discovery mechanism is needed for obtaining agent descriptions, supporting both local and global networks. It must accommodate updates to agent descriptions and handle the dynamic nature of agents, allowing for their constant evolution.
+
+- **Metadata Propagation Protocol**  
+   Agents should be able to propagate metadata using suitable protocols. For local network discovery and registration, mDNS (Multicast DNS) can be used. For broader network discovery, agents can publish their metadata to a centralized Agent Registry.
+
+- **Agent Registry**  
+   A centralized Agent Registry is necessary, serving as a repository where agents can register themselves and query information about other registered agents. This would facilitate easy discovery and integration across networks.
+
+- **Dynamic Agent Discovery**  
+   Agents should have the ability to dynamically discover other agents. They can query the Agent Registry based on specific criteria, such as capabilities or metadata, ensuring the right agents are matched for a given task.
+
+- **Agent Communication Protocol**  
+   Agents should be able to communicate using open protocols, but the architecture must provide flexibility in choosing the best protocol for each agent’s purpose. Rather than enforcing a single transport protocol like HTTP, MQTT, or AMQP, the system should allow agents to select and adapt protocols based on their needs.
+
+- **Group Management**  
+   The architecture should support the creation and management of agent groups. This functionality allows the formation, management, and dissolution of agent groups while enforcing trust relationships among agents within the group. It enhances collaboration and coordination across agents in the system.
+
 
 ## What is LMOS?
 

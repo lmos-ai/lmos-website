@@ -10,7 +10,7 @@ const FeatureList = [
     {
       Icon: FaBolt,
       title: 'LMOS is interoperable',
-      description: 'Built for a interoperable agent ecosystem, LMOS leverages established open standards for agent communication, discovery, and security, eliminating the need to reinvent the wheel.',
+      description: 'Built for a interoperable agent ecosystem, LMOS leverages established open standards for agent communication, meta  discovery, and security, eliminating the need to reinvent the wheel.',
     },
     {
       Icon: FaBolt,
@@ -64,7 +64,7 @@ const FeatureList = [
             <p>
               LMOS is an <strong>open-source, vendor-neutral platform</strong> to build and run enterprise-ready <strong>multi-agent systems in the cloud</strong>.
               Our vision is to create a sovereign and open platform and ecosystem where AI agents can be developed, deployed, and integrated seamlessly across industries.
-              Built on top of open standards and Kubernetes, it enables developers to build intelligent, scalable, and adaptive multi-agent systems with ease.
+              Built on top of open standards and Kubernetes, it enables developers to build intelligent, scalable, and adaptive multi-agent systems.
             </p>
           </div>
          
