@@ -1,18 +1,29 @@
 # Website
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This LMOS website is built using [Docusaurus](https://docusaurus.io/).
 
-### Installation
+## Prerequisites
 
-Install nodejs and NPM. 
+Before you begin, ensure the following tools are installed and running on your local machine:
 
-### Local Development
+- [Docker](https://docs.docker.com/get-docker/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Remote - Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-```
-$ npm run start
-```
+## Using the Development Container
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+### Step 1: Open the Repository in a Dev Container
+
+1. Clone the repository:
+    ```shell
+    git clone https://github.com/lmos-ai/lmos-website.git
+    cd lmos-website
+
+2. Open the repository in Visual Studio Code:
+
+3. Open the Command Palette (F1 or Ctrl+Shift+P) and select `Remote-Containers: Reopen in Container`. This will build and open the repository in a Docker-based development container and start the dev webserver.
+
+4. Open http://localhost:3000/
 
 ### Build
 
