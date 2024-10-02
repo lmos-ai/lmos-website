@@ -25,8 +25,7 @@ By aligning our development with these core principles, we aim to create a trust
 **LMOS (Language Model Operating System)**  revolutionizes AI development by simplifying the creation and management of LLM-powered agents in the cloud. Designed to abstract away the complexities, LMOS enables developers to focus on building scalable, intelligent agents without getting bogged down by infrastructure challenges. 
 
 1. **Simplified AI Agent Development:**
-LMOS abstracts the intricacies of LLMs, memory management, and tool access. Just as an operating system manages applications and hardware, LMOS acts as a virtual "OS" for AI agents, letting you focus on creating intelligent agents rather than dealing with backend infrastructure. <br></br>
-LMOS offers a simple yet powerful Kotlin framework called [Agent ReaCtor (ARC)](https://lmos-ai.github.io/arc/) for developers of all skill levels to build intelligent AI agents. Built on the JVM and Kotlin for best-in-class performance, ARC delivers rapid prototyping, and seamless collaboration between developers and data scientists
+LMOS abstracts the intricacies of LLMs, memory management, and tool access. Just as an operating system manages applications and hardware, LMOS acts as a virtual "OS" for AI agents, letting you focus on creating intelligent agents rather than dealing with backend infrastructure.
 
 2. **Agent Lifecycle Management:**
 LMOS supports real-world deployment strategies, including canary releases and advanced routing techniques based on Natural Language Understanding (NLU). This allows businesses to safely introduce new agent features and capabilities in a controlled, incremental manner, ensuring stability and minimizing risks during updates.
@@ -47,7 +46,11 @@ With its integrated LMOS Runtime and Router, LMOS intelligently routes tasks to 
 
 To realize its vision of simplifying AI agent development, LMOS introduces several core components:
 
-### 1. LMOS Operator
+### 1. Agent ReaCtor
+
+LMOS offers a simple yet powerful Kotlin framework called [Agent ReaCtor (ARC)](https://lmos-ai.github.io/arc/) for developers of all skill levels to build intelligent AI agents. Built on the JVM and Kotlin for best-in-class performance, ARC delivers rapid prototyping, and seamless collaboration between developers and data scientists
+
+### 2. LMOS Operator
 
 The **LMOS Operator** is a Kubernetes operator responsible for dynamically managing the deployment and capabilities of AI agents within the Kubernetes environment.
 
@@ -56,7 +59,7 @@ The **LMOS Operator** is a Kubernetes operator responsible for dynamically manag
 - **Advanced Deployment Strategies**: It supports **canary releases** to gradually roll out new agent features.
 - **Channel Reconciler**: Watches for changes in channel resources and triggers reconciliation, matching capabilities with agents.
 
-### 2. LMOS Runtime
+### 3. LMOS Runtime
 
 The **LMOS Runtime** orchestrates collaboration between multiple AI agents, similar to how an OS manages processes and assigns tasks.
 
@@ -65,7 +68,7 @@ The **LMOS Runtime** orchestrates collaboration between multiple AI agents, simi
 - **Capability-Based Task Assignment**: Dynamically assigns tasks to the most capable agents based on their registered capabilities.
 - **Integration with LMOS Router**: The Runtime works closely with the Router to manage agent task assignments and memory sharing.
 
-### 3. LMOS Router
+### 4. LMOS Router
 
 The **LMOS Router** acts as the traffic controller for user queries, ensuring they are routed to the agent with the most relevant capabilities.
 
