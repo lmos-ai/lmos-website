@@ -4,28 +4,38 @@ import styles from './styles.module.css';
 const FeatureList = [
     {
       Icon: FaBalanceScale,
-      title: 'LMOS is fair',
-      description: 'Everybody should have equal access to all public forums. The hashgraph algorithm is leaderless. We all deserve a fair world.',
+      title: 'LMOS is open',
+      description: 'Innovation thrives in an open environment. LMOS is part of an open ecosystem, inviting developers, data scientists, and organizations to collaborate and shape the future of Multi-Agent Systems.',
     },
     {
       Icon: FaBolt,
-      title: 'LMOS is fast',
-      description: 'The hashgraph algorithm isn’t just fair, it’s also fast. Transactions finalize quickly without sacrificing performance or security.',
+      title: 'LMOS is interoperable',
+      description: 'Built for a interoperable agent ecosystem, LMOS leverages established open standards for agent communication, discovery, and security, eliminating the need to reinvent the wheel.',
+    },
+    {
+      Icon: FaBolt,
+      title: 'LMOS is collaborative',
+      description: 'AI agent collaboration improves problem-solving by harnessing the strengths of multiple models, boosting accuracy, efficiency, and adaptability. LMOS orchestrates these interactions with advanced routing based on Natural Language Understanding (NLU), allowing agents to work together seamlessly within a single, unified system.',
     },
     {
       Icon: FaLock,
-      title: 'LMOS is secure',
-      description: 'The hashgraph algorithm is asynchronous Byzantine Fault Tolerant (ABFT), providing the highest security available.',
+      title: 'LMOS is cloud-native and scalable',
+      description: 'As your AI needs grow, LMOS grows with you. Its cloud-native architecture dynamically scales from a few agents to hundreds, ensuring seamless performance without bottlenecks as your AI operations expand.',
     },
     {
       Icon: FaUsers,
-      title: 'LMOS is decentralized',
-      description: 'No one entity has control. The decentralized nature ensures equal access, security, and transparency.',
+      title: 'LMOS is modular',
+      description: 'LMOS is built with modularity at its core, allowing you to easily integrate new modules in your preferred development language, making customization and expansion straightforward.',
     },
     {
       Icon: FaCrown,
-      title: 'LMOS is leaderless',
-      description: 'With a leaderless consensus protocol, we prevent denial-of-service and secure the network from centralization.',
+      title: 'LMOS is extensible',
+      description: 'Extensibility drives innovation. LMOS defines clear specifications, allowing you to quickly extend its ecosystem of agents and tools with minimal friction.',
+    },
+    {
+      Icon: FaCrown,
+      title: 'LMOS is multi-tenant capable',
+      description: 'Built with enterprises in mind, LMOS is multi-tenant capable from the ground up. LMOS allows to efficiently manage multiple tenants and channels within the same infrastructure.',
     }
   ];
 
@@ -52,8 +62,9 @@ const FeatureList = [
           <div className={styles.titleContainer}>
             <h1>What is LMOS?</h1>
             <p>
-              LMOS, a <a href="https://www.linuxfoundation.org/">Linux Foundation Decentralized Trust</a> project, is an open-source, vendor-neutral distributed ledger technology.
-              LMOS is used to build the <a href="https://hedera.com/">Hedera</a> public ledger.
+              LMOS is an <strong>open-source, vendor-neutral platform</strong> to build and run enterprise-ready <strong>multi-agent systems in the cloud</strong>.
+              Our vision is to create a sovereign and open platform and ecosystem where AI agents can be developed, deployed, and integrated seamlessly across industries.
+              Built on top of open standards and Kubernetes, it enables developers to build intelligent, scalable, and adaptive multi-agent systems with ease.
             </p>
           </div>
          

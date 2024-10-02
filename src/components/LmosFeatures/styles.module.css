@@ -22,7 +22,6 @@
   .features {
     flex-grow: 1; /* Take remaining width */
     padding: 20px; /* Add padding if needed */
-    overflow-y: auto; /* Enable vertical scrolling if necessary */
     max-height: 100vh; /* Max height to keep scrolling area */
   }
   /* Individual feature styling with flexbox for layout */

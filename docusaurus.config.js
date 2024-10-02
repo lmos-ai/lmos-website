@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'LMOS',
-  tagline: 'Open Source, cloud native OS for building and running Multi-Agent systems',
+  tagline: 'Open-source, cloud-native platform for building and running Multi-Agent systems',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -79,16 +79,16 @@ const config = {
             label: 'Documentation',
           },
           {
+            type: 'docSidebar',
+            sidebarId: 'aboutUsSidebar',
+            position: 'left',
+            label: 'About us',
+          },
+          {
             href: 'https://github.com/lmos-ai',
             label: 'GitHub',
             position: 'right',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'contributeSidebar',
-            position: 'left',
-            label: 'Contribute',
-          },
+          }
         ],
       },
       footer: {

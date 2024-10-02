@@ -1,10 +1,12 @@
 ---
+title: Introduction
 sidebar_position: 1
 ---
 
 # What is LMOS?
 
 **LMOS (Language Model Operating System)** is a platform designed to simplify and accelerate the development of LLM-powered agents in the cloud. Drawing inspiration from traditional operating systems, LMOS abstracts the complexities of working with large language models, memory management, and tool integration, enabling developers to focus on building intelligent agents without worrying about infrastructure.
+
 
 ---
 
