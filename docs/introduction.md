@@ -22,7 +22,7 @@ By aligning our development with these core principles, we aim to create a trust
 
 ## An open multi-agent architecture
 
-In an open multi-agent architecture, the goal is to enable seamless discovery of agent capabilities and services, while ensuring efficient communication between agents across diverse networks. The [W3C Web of Things Architecture](https://www.w3.org/TR/wot-architecture11/) provides a strong foundation for developing an open Web of Agents architecture.
+In an open multi-agent architecture, the goal is to enable seamless discovery of agent capabilities and services, while ensuring efficient communication between agents across diverse networks. The [W3C Web of Things Architecture](https://www.w3.org/TR/wot-architecture11/) provides a strong inspiration for developing an open Web of Agents architecture.
 
 The key requirements for an open multi-agent architecture are:
 
