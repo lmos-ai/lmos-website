@@ -88,7 +88,13 @@ const config = {
             href: 'https://github.com/lmos-ai',
             label: 'GitHub',
             position: 'right',
-          }
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'contributeSidebar',
+            position: 'left',
+            label: 'Contribute',
+          },
         ],
       },
       footer: {
