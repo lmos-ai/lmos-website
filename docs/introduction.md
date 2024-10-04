@@ -77,36 +77,3 @@ The key features of LMOS are:
 
 By promoting an open, scalable, and interoperable architecture, **LMOS** enables the development of next-generation AI agents that can seamlessly integrate and collaborate across diverse environments, paving the way for a truly connected and intelligent future.
 
-## Core Components of LMOS
-
-To realize its vision of simplifying AI agent development, LMOS introduces several core components:
-
-### 1. Agent ReaCtor
-
-LMOS offers a simple yet powerful Kotlin framework called [Agent ReaCtor (ARC)](https://lmos-ai.github.io/arc/) for developers of all skill levels to build intelligent AI agents. Built on the JVM and Kotlin for best-in-class performance, ARC delivers rapid prototyping, and seamless collaboration between developers and data scientists
-
-### 2. LMOS Operator
-
-The **LMOS Operator** is a Kubernetes operator responsible for dynamically managing the deployment and capabilities of AI agents within the Kubernetes environment.
-
-#### Key Features:
-- **Dynamic Capability Resolution**: The Operator dynamically resolves which agents have the required capabilities for specific channels (e.g., web, mobile, IVR).
-- **Advanced Deployment Strategies**: It supports **canary releases** to gradually roll out new agent features.
-- **Channel Reconciler**: Watches for changes in channel resources and triggers reconciliation, matching capabilities with agents.
-
-### 3. LMOS Runtime
-
-The **LMOS Runtime** orchestrates collaboration between multiple AI agents, similar to how an OS manages processes and assigns tasks.
-
-#### Key Aspects:
-- **Collaborative Multi-Agent Management**: Ensures agents collaborate to resolve complex customer queries.
-- **Capability-Based Task Assignment**: Dynamically assigns tasks to the most capable agents based on their registered capabilities.
-- **Integration with LMOS Router**: The Runtime works closely with the Router to manage agent task assignments and memory sharing.
-
-### 4. LMOS Router
-
-The **LMOS Router** acts as the traffic controller for user queries, ensuring they are routed to the agent with the most relevant capabilities.
-
-#### Matching Techniques:
-- **LLM-Based Approach**: Uses a language model to understand the semantics of the user query and intelligently match it to agents.
-- **Vector-Based Approach**: Uses vector embeddings (e.g., cosine similarity) to compute the closeness between a query and agent capabilities for fast, large-scale matching.

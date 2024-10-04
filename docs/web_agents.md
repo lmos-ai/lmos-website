@@ -73,32 +73,41 @@ This example illustrates how a Weather Agent can be modeled using a Thing Descri
 
 ```json
 {
-    "@context": "https://www.w3.org/2022/wot/td/v1.1",
+    "@context": [
+        "https://www.w3.org/2022/wot/td/v1.1",
+        {
+            "htv": "http://www.w3.org/2011/http#",
+            "ex": "https://weatherai.example.com",
+        },
+        "https://schema.org/"
+    ],
     "id": "urn:uuid:6f1d3a7a-1f97-4e6b-b45f-f3c2e1c84c77",
     "title": "WeatherAgent",
-    "metadata": {
-        "vendor": {
-            "name": "WeatherAI Inc.",
-            "url": "https://weatherai.example.com"
+    "@type": "ex:Agent",
+    "ex:metadata": {
+        "ex:vendor": {
+            "ex:name": "WeatherAI Inc.",
+            "ex:url": "https://weatherai.example.com"
         },
-        "model": {
-            "name": "gpt-4o"
+        "ex:model": {
+            "ex:name": "gpt-4o",
+            "ex:provider": "Azure"
         },
-        "serviceIntegration": {
-            "weatherAPI": "OpenWeatherMap",
-            "apiVersion": "v2.5",
-            "apiDocumentation": "https://openweathermap.org/api"
+        "ex:serviceIntegration": {
+            "ex:weatherAPI": "OpenWeatherMap",
+            "ex:apiVersion": "v2.5",
+            "ex:apiDocumentation": "https://openweathermap.org/api"
         },
-        "dataPrivacy": {
-            "dataRetentionPeriod": "30 days",
-            "anonymizationMethod": "HASHING"
+        "ex:dataPrivacy": {
+            "ex:dataRetentionPeriod": "30 days",
+            "ex:anonymizationMethod": "HASHING"
         },
-        "interaction": {
-            "supportedLanguages": ["en_US", "de_DE"],
-            "interactionMode": ["text", "voice"]
+        "ex:interaction": {
+            "ex:supportedLanguages": ["en_US", "de_DE"],
+            "ex:interactionMode": ["text", "voice"]
         },
-        "compliance": {
-            "regulatoryCompliance": "GDPR"
+        "ex:compliance": {
+            "ex:regulatoryCompliance": "GDPR"
         }
     },
     "securityDefinitions": {

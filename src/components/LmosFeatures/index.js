@@ -41,7 +41,11 @@ const FeatureList = [
   },
   {
     Icon: FaPuzzlePiece,
-    title: 'LMOS is modular',
+    title: (
+      <>
+        LMOS is <span className={styles.featuretext}>modular</span>
+      </>
+    ),
     description: 'LMOS is built with modularity at its core, allowing you to easily integrate new modules in your preferred development language, making customization and expansion straightforward.',
   },
   {
