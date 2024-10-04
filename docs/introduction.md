@@ -8,7 +8,7 @@ sidebar_position: 1
 ## Our vision
 Our vision is to create a **sovereign and open platform and ecosystem for intelligent agents** that enables seamless development, deployment, and integration across various industries. This vision is realized by the **LMOS (Language Model Operating System)**, which is built on open standards and tools, allowing organizations to innovate and collaborate without the constraints of closed systems.
 
-Our commitment — Openness, Interoperability, Security, and Transparency — guides the development of our platform. We believe that systems built on these principles foster collaboration and innovation.
+Our principles — Openness, Interoperability, Security and Transparency — guide the development of our platform. We believe that systems built on these principles foster collaboration and innovation.
 
 **Openness:** Embrace open standards and protocols to foster collaboration, innovation, and accessibility within the intelligent agent ecosystem, over closed proprietary systems that hinder collaboration and innovation.
 
@@ -22,7 +22,7 @@ By aligning our development with these core principles, we aim to create a trust
 
 ## An open multi-agent architecture
 
-In an open multi-agent architecture, the goal is to enable seamless discovery of agent capabilities and services, while ensuring efficient communication between agents across diverse networks. The [W3C Web of Things Architecture](https://www.w3.org/TR/wot-architecture11/) provides a strong inspiration for developing an open Web of Agents architecture.
+In an open multi-agent architecture, the goal is to enable seamless discovery of agent capabilities and services, while ensuring efficient communication between agents across diverse networks. The [W3C Web of Things Architecture](https://www.w3.org/WoT/) provides a strong inspiration for developing an open Web of Agents architecture.
 
 The key requirements for an open multi-agent architecture are:
 
