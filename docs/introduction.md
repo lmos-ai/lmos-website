@@ -6,7 +6,7 @@ sidebar_position: 1
 # Introduction
 
 ## Our vision
-Our vision is to create a **sovereign and open platform and ecosystem for intelligent agents** that enables seamless development, deployment, and integration across various industries. This vision is realized by the **LMOS (Language Model Operating System)**, which is built on open standards and tools, allowing organizations to innovate and collaborate without the constraints of closed systems.
+Our vision is to create a **sovereign and open platform and ecosystem for intelligent agents** that enables seamless development, deployment, and integration across networks and industries. This vision is realized by the **LMOS (Language Model Operating System)**, which is built on open standards and tools, allowing organizations to innovate and collaborate without the constraints of closed systems.
 
 Our principles — Openness, Interoperability, Security and Transparency — guide the development of our platform. We believe that systems built on these principles foster collaboration and innovation.
 
@@ -61,7 +61,7 @@ The key features of LMOS are:
    Built on the principles of openness and interoperability, LMOS supports seamless integration of AI agents across diverse platforms and networks. By embracing open standards, LMOS ensures that agents from various systems can communicate, share knowledge, and collaborate, fostering innovation across industries.
 
 - **Agent Lifecycle Management:**  
-   LMOS enables real-world deployment strategies, such as canary releases and advanced routing techniques based on Natural Language Understanding (NLU). These features allow businesses to introduce new agent features incrementally, ensuring stability and reducing risk during updates.
+   LMOS enables real-world deployment strategies, such as canary releases and advanced routing techniques based on Natural Language Understanding (NLU). These features allow enterprises to introduce new agent features incrementally, ensuring stability and reducing risk during updates.
 
 - **Cloud-Native Scalability:**  
    Leveraging Kubernetes, LMOS ensures cloud-native scalability, allowing AI agents to grow alongside your business needs. Whether managing a small number of agents or deploying hundreds across multiple channels (e.g., web, mobile, IVR), LMOS dynamically scales to meet the demands of your enterprise while maintaining high performance.
