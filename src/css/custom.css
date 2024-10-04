@@ -12,13 +12,16 @@
 /* You can override the default Infima variables here. */
 :root {
   /* Primary Colors - Light Mode */
-  --ifm-color-primary: #2563EB;
-  --ifm-color-primary-dark: #1D4ED8;
-  --ifm-color-primary-darker: #1E40AF;
-  --ifm-color-primary-darkest: #1E3A8A;
-  --ifm-color-primary-light: #3B82F6;
-  --ifm-color-primary-lighter: #60A5FA;
-  --ifm-color-primary-lightest: #93C5FD;
+  --ifm-color-primary: #38BDF8;
+  --ifm-color-primary-dark: #1ab2f7;
+  --ifm-color-primary-darker: #0baaf6;
+  --ifm-color-primary-darkest: #078dd0;
+  --ifm-color-primary-light: #56c8f9;
+  --ifm-color-primary-lighter: #65cdf9;
+  --ifm-color-primary-lightest: #92dbfb;
+  
+  --ifm-color-secondary: #34d399;
+  --ifm-color-success: #10B981;
   
   /* Background and Text Colors - Light Mode */
   --ifm-background-color: #FFFFFF;
@@ -42,23 +45,22 @@
   --ifm-color-danger: #F43F5E;
 }
 
+.hero--primary {
+  background-image: linear-gradient(#38BDF8DD, #38BDF8DD), url('/img/lmos.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 /* Dark Mode Theme */
-[data-theme='dark'] {
-  /* Primary Colors - Dark Mode */
-  --ifm-color-primary: #60A5FA;
-  --ifm-color-primary-dark: #3B82F6;
-  --ifm-color-primary-darker: #2563EB;
-  --ifm-color-primary-darkest: #1D4ED8;
-  --ifm-color-primary-light: #93C5FD;
-  --ifm-color-primary-lighter: #BFDBFE;
-  --ifm-color-primary-lightest: #DBEAFE;
-  
+[data-theme='dark'] {  
   /* Background and Text Colors - Dark Mode */
   --ifm-background-color: #0F172A;
-  --ifm-background-surface-color: #1E293B;
+  --ifm-background-surface-color: #334155;
+  --ifm-background-surface-color-light: #3E4A61;
   --ifm-color-content: #F8FAFC;
   --ifm-color-content-secondary: #94A3B8;
-  
+    
   /* Code and Syntax */
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
   
@@ -66,11 +68,14 @@
   --ifm-toc-border-color: #334155;
   --ifm-navbar-background-color: #1E293B;
   --ifm-footer-background-color: #0F172A;
-  
-
 }
 
-/* Optional: Custom Scrollbar for Dark Mode */
+[data-theme='dark'] .hero--primary {
+  --ifm-heading-color: var(--ifm-color-primary);
+  background-image: linear-gradient(#3E4A61EE, #3E4A61EE), url('/img/lmos.svg');
+  color: var(--ifm-color-content);
+}
+
 [data-theme='dark'] {
   scrollbar-color: #334155 #1E293B;
 }

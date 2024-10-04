@@ -62,13 +62,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/lmos.png',
       navbar: {
         title: 'LMOS',
         logo: {
           alt: 'LMOS',
-          src: 'img/LMOS.svg',
+          src: 'img/lmos.svg',
         },
         items: [
           {
@@ -109,7 +108,7 @@ const config = {
             ],
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Deutsche Telekom AG.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Deutsche Telekom AG`,
       },
       prism: {
         theme: prismThemes.github,
