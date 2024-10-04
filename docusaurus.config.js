@@ -59,7 +59,6 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -69,7 +68,7 @@ const config = {
         title: 'LMOS',
         logo: {
           alt: 'LMOS',
-          src: 'img/logo.jpg',
+          src: 'img/LMOS.svg',
         },
         items: [
           {

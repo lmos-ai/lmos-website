@@ -11,11 +11,13 @@
 
 // @ts-check
 
+
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   tutorialSidebar: [
     "introduction",
+    "web_agents",
     "getting_started",
   ],
   contributeSidebar: [
