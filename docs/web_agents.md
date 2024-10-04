@@ -13,7 +13,8 @@ Many current multi-agent frameworks are built around specific ecosystems, which 
 This limitation hampers innovation and reduces the overall utility of a multi-agent framework, as it cannot leverage the full spectrum of available agents.
 
 ### Lack of standardized data formats
-Many frameworks use proprietary or non-standard data formats for agent interactions, making it difficult for agents to interpret and exchange information. This lack of standardization can lead to integration issues and increased complexity when collaborating with other agents. Without a standardized format for agent metadata, different agents may use varying schemas or data structures to describe their capabilities, services, and requirements. This inconsistency creates barriers for agents trying to discover and interact with one another, as each agent may interpret metadata differently. 
+Many frameworks use proprietary or non-standard data formats for agent interactions, making it difficult for agents to interpret and exchange information. <br></br>
+This lack of standardization can lead to integration issues and increased complexity when collaborating with other agents. Without a standardized format for agent metadata, different agents may use varying schemas or data structures to describe their capabilities, services, and requirements. This inconsistency creates barriers for agents trying to discover and interact with one another, as each agent may interpret metadata differently. 
 
 ### Single Network vs Internet
 
@@ -23,8 +24,9 @@ This limitation prevents frameworks from accurately modeling the interactions an
 
 ### Fixed Communication protocol
 
-The communication protocol in many frameworks is fixed. <br></br>
-This limitation forces developers to adopt specific communication methods that may not align with their needs. As the number of agents in a system increases, the lack of standardization in communication formats can complicate scaling efforts. New agents may be added with different communication requirements, leading to potential conflicts and inefficiencies. This complexity can hinder the ability of the system to accommodate growth without significant rework or additional overhead.
+The communication protocol in many frameworks is fixed. For example some frameworks might only support HTTP for communication, excluding other widely used protocols like MQTT (Message Queuing Telemetry Transport) or WebSockets. <br></br>
+This limitation can hinder agents that would benefit from real-time communication or lightweight messaging. Some frameworks enforce a fixed request-response pattern, restricting agents to this interaction style and preventing more dynamic communication patterns such as publish-subscribe or event-driven architectures. 
+This forces developers to adopt specific communication patterns that may not align with their needs. 
 
 ### Limited Dynamic Team Formation
 
@@ -64,3 +66,69 @@ WoT’s interoperability principles allow agents from different domains (e.g., s
 
 9. **Standardized Testing and Validation:**
 The establishment of common protocols and formats within WoT can enable standardized testing and validation of agents.
+
+### Agent Description Example
+
+This example illustrates how a Weather Agent can be modeled using a Thing Description, with HTTP as the primary communication protocol, although alternative protocols may also be utilized. The Agent is secured through Basic Authentication, but other security schemes, such as OAuth2 tokens, can also be used.
+
+```json
+{
+    "@context": "https://www.w3.org/2022/wot/td/v1.1",
+    "id": "urn:uuid:6f1d3a7a-1f97-4e6b-b45f-f3c2e1c84c77",
+    "title": "WeatherAgent",
+    "metadata": {
+        "vendor": {
+            "name": "WeatherAI Inc.",
+            "url": "https://weatherai.example.com"
+        },
+        "model": {
+            "name": "gpt-4o"
+        },
+        "serviceIntegration": {
+            "weatherAPI": "OpenWeatherMap",
+            "apiVersion": "v2.5",
+            "apiDocumentation": "https://openweathermap.org/api"
+        },
+        "dataPrivacy": {
+            "dataRetentionPeriod": "30 days",
+            "anonymizationMethod": "HASHING"
+        },
+        "interaction": {
+            "supportedLanguages": ["en_US", "de_DE"],
+            "interactionMode": ["Text", "Voice"]
+        },
+        "compliance": {
+            "regulatoryCompliance": "GDPR"
+        }
+    },
+    "securityDefinitions": {
+        "basic_sc": {
+            "scheme": "basic",
+            "in": "header"
+        }
+    },
+    "security": "basic_sc",
+    "actions": {
+        "getWeather": {
+            "safe": true,
+            "idempotent": true,
+            "input": {
+                "type": "string",
+                "description": "Natural language input asking for weather information."
+            },
+            "output": {
+                "type": "string",
+                "description": "Natural language output providing weather information."
+            },            
+            "forms": [
+                {
+                    "op": "invokeaction",
+                    "href": "https://weatherai.example.com/weather",
+                    "contentType": "application/json",
+                    "htv:methodName":"POST"
+                }
+            ]
+        }
+    }
+}
+```
