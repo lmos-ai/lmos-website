@@ -95,6 +95,10 @@ const config = {
           },
         ],
       },
+      colorMode: {
+        defaultMode: 'dark',
+        respectPrefersColorScheme: true,
+      },
       footer: {
         style: 'dark',
         links: [
@@ -123,6 +127,7 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+    
 };
 
 export default config;
