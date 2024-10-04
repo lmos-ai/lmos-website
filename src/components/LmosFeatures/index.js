@@ -1,43 +1,44 @@
-import { FaBalanceScale, FaBolt, FaLock, FaUsers, FaCrown } from 'react-icons/fa';
 import styles from './styles.module.css';
 
+import { FaGlobe, FaPlug, FaUsers, FaCloud, FaPuzzlePiece, FaLayerGroup, FaBuilding } from 'react-icons/fa';
+
 const FeatureList = [
-    {
-      Icon: FaBalanceScale,
-      title: 'LMOS is open',
-      description: 'Innovation thrives in an open environment. LMOS is part of an open ecosystem, inviting developers, data scientists, and organizations to collaborate and shape the future of Multi-Agent Systems.',
-    },
-    {
-      Icon: FaBolt,
-      title: 'LMOS is interoperable',
-      description: 'Built for a interoperable agent ecosystem, LMOS leverages established open standards for agent communication, meta  discovery, and security, eliminating the need to reinvent the wheel.',
-    },
-    {
-      Icon: FaBolt,
-      title: 'LMOS is collaborative',
-      description: 'AI agent collaboration improves problem-solving by harnessing the strengths of multiple models, boosting accuracy, efficiency, and adaptability. LMOS orchestrates these interactions with advanced routing based on Natural Language Understanding (NLU), allowing agents to work together seamlessly within a single, unified system.',
-    },
-    {
-      Icon: FaLock,
-      title: 'LMOS is cloud-native and scalable',
-      description: 'As your AI needs grow, LMOS grows with you. Its cloud-native architecture dynamically scales from a few agents to hundreds, ensuring seamless performance without bottlenecks as your AI operations expand.',
-    },
-    {
-      Icon: FaUsers,
-      title: 'LMOS is modular',
-      description: 'LMOS is built with modularity at its core, allowing you to easily integrate new modules in your preferred development language, making customization and expansion straightforward.',
-    },
-    {
-      Icon: FaCrown,
-      title: 'LMOS is extensible',
-      description: 'Extensibility drives innovation. LMOS defines clear specifications, allowing you to quickly extend its ecosystem of agents and tools with minimal friction.',
-    },
-    {
-      Icon: FaCrown,
-      title: 'LMOS is multi-tenant capable',
-      description: 'Built with enterprises in mind, LMOS is multi-tenant capable from the ground up. LMOS allows to efficiently manage multiple tenants and channels within the same infrastructure.',
-    }
-  ];
+  {
+    Icon: FaGlobe,
+    title: 'LMOS is open',
+    description: 'Innovation thrives in an open environment. LMOS is part of an open ecosystem, inviting developers, data scientists, and organizations to collaborate and shape the future of Multi-Agent Systems.',
+  },
+  {
+    Icon: FaPlug,
+    title: 'LMOS is interoperable',
+    description: 'Built for a interoperable agent ecosystem, LMOS leverages established open standards for agent communication, meta discovery, and security, eliminating the need to reinvent the wheel.',
+  },
+  {
+    Icon: FaUsers,
+    title: 'LMOS is collaborative',
+    description: 'AI agent collaboration improves problem-solving by harnessing the strengths of multiple models, boosting accuracy, efficiency, and adaptability. LMOS orchestrates these interactions with advanced routing based on Natural Language Understanding (NLU), allowing agents to work together seamlessly within a single, unified system.',
+  },
+  {
+    Icon: FaCloud,
+    title: 'LMOS is cloud-native and scalable',
+    description: 'As your AI needs grow, LMOS grows with you. Its cloud-native architecture dynamically scales from a few agents to hundreds, ensuring seamless performance without bottlenecks as your AI operations expand.',
+  },
+  {
+    Icon: FaPuzzlePiece,
+    title: 'LMOS is modular',
+    description: 'LMOS is built with modularity at its core, allowing you to easily integrate new modules in your preferred development language, making customization and expansion straightforward.',
+  },
+  {
+    Icon: FaLayerGroup,
+    title: 'LMOS is extensible',
+    description: 'Extensibility drives innovation. LMOS defines clear specifications, allowing you to quickly extend its ecosystem of agents and tools with minimal friction.',
+  },
+  {
+    Icon: FaBuilding,
+    title: 'LMOS is multi-tenant capable',
+    description: 'Built with enterprises in mind, LMOS is multi-tenant capable from the ground up. LMOS allows to efficiently manage multiple tenants and channels within the same infrastructure.',
+  },
+];
 
   function Feature({ Icon, title, description }) {
     return (
