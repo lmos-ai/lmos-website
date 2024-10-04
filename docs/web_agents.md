@@ -67,7 +67,7 @@ WoT’s interoperability principles allow agents from different domains (e.g., s
 9. **Standardized Testing and Validation:**
 The establishment of common protocols and formats within WoT can enable standardized testing and validation of agents.
 
-### Agent Description Example
+### Agent Description example
 
 This example illustrates how a Weather Agent can be modeled using a Thing Description, with HTTP as the primary communication protocol, although alternative protocols may also be utilized. The Agent is secured through Basic Authentication, but other security schemes, such as OAuth2 tokens, can also be used.
 
@@ -95,7 +95,7 @@ This example illustrates how a Weather Agent can be modeled using a Thing Descri
         },
         "interaction": {
             "supportedLanguages": ["en_US", "de_DE"],
-            "interactionMode": ["Text", "Voice"]
+            "interactionMode": ["text", "voice"]
         },
         "compliance": {
             "regulatoryCompliance": "GDPR"
@@ -110,11 +110,22 @@ This example illustrates how a Weather Agent can be modeled using a Thing Descri
     "security": "basic_sc",
     "actions": {
         "getWeather": {
-            "safe": true,
-            "idempotent": true,
+            "description": "Fetches weather information based on user input.",
+            "safe": true, //  Used to signal that there is no internal state changed when invoking the action. 
+            "idempotent": false, // Informs whether the Action can be called repeatedly with the same result.
+            "synchronous": true,
             "input": {
-                "type": "string",
-                "description": "Natural language input asking for weather information."
+               "type": "object",
+                "properties": {
+                    "question": {
+                        "type": "string"
+                    },
+                    "interactionMode": {
+                        "type": "string",
+                        "enum": ["text", "voice"]
+                    }
+                },
+                "required": ["question","interactionMode"]
             },
             "output": {
                 "type": "string",
@@ -131,4 +142,40 @@ This example illustrates how a Weather Agent can be modeled using a Thing Descri
         }
     }
 }
+```
+
+### Node.js example
+
+Here's a simple example of how you can interact with the Weather Agent from a Node.js application using `node-wot`, without needing to know whether it's an AI Agent or a traditional device.
+
+```javascript
+const WoT = require('@node-wot/core');
+const HttpClientFactory = require('@node-wot/binding-http');
+
+async function fetchWeather(question, interactionMode) {
+    try {
+        // Request the Thing Description from the Weather Agent
+        const td = await WoT.requestThingDescription("http://weatheragent.example.com/td");
+        
+        // Consume the Thing Description
+        const thing = await WoT.consume(td);
+
+        // Prepare input parameters for the action
+        const inputParams = {
+            question: question,
+            interactionMode: interactionMode
+        };
+
+        // Invoke the getWeather action
+        const weatherResponse = await thing.invokeAction("getWeather", inputParams);
+        const weatherData = await weatherResponse.value();
+    } catch (err) {
+        console.error("Error fetching weather:", err);
+    }
+}
+
+// Example usage
+const question = 'What is the weather in berlin?'; 
+const interactionMode = 'text';
+fetchWeather(question, interactionMode);
 ```
