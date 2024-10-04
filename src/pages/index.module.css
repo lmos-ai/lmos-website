@@ -31,6 +31,7 @@
 
 .heroButton:hover {
   text-decoration: none;
+  color: var( --ifm-color-success);
 }
 
 @media screen and (max-width: 996px) {

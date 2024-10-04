@@ -84,20 +84,19 @@ const FeatureList = [
   
   export default function Features() {
     return (
-      <div className={styles.container}>
-        
-        <div className={styles.gridContainer}>
-          
-          <div className={styles.titleContainer}>
+      <div className="container--fluid padding--lg">
+        <div className="row">
+          <div className="col col--4 col--sm-12 padding--md">
             <h1>What is LMOS?</h1>
             <p>
               LMOS is an <strong>open-source, vendor-neutral platform</strong> to build and run enterprise-ready <strong>multi-agent systems in the cloud</strong>.
-              Our vision is to create a sovereign and open platform and ecosystem where AI agents can be developed, deployed, and integrated seamlessly across industries.
+              <br /> <br />
+              Our vision is to create a sovereign and open platform and ecosystem where AI agents can be developed, deployed, and integrated seamlessly across networks and industries.
               Built on top of open standards and Kubernetes, it enables developers to build intelligent, scalable, and adaptive multi-agent systems.
             </p>
           </div>
          
-          <div className={styles.features}>
+          <div className="col col--8 col--sm-12 padding--md">
             {FeatureList.map((feature, idx) => (
               <Feature
                 key={idx}
