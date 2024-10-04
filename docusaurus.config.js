@@ -44,14 +44,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/lmos-ai/lmos-website',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/lmos-ai/lmos-website',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -102,9 +102,17 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/lmos',
+                label: 'Introduction',
+                to: '/docs/introduction',
               },
+              {
+                label: 'Architecture',
+                to: '/docs/architecture',
+              },
+              {
+                label: 'Getting Started',
+                to: '/docs/getting_started',
+              }
             ],
           }
         ],
