@@ -2,14 +2,14 @@
 title: About us
 ---
 
-### **An Open Letter about us, Our Journey, and the Direction we are headed**
+**An Open Letter about us, Our Journey, and the Direction we are headed**
 
 > **"The art of a great painting is not in any one idea, nor in a multitude of separate tricks for placing all those pigment spots, but in the great network of relationships among its parts. Similarly, the agents, raw, that make our minds are by themselves as valueless as aimless, scattered daubs of paint. What counts is what we make of them."**  
 > — Marvin Minsky, *The Society of Mind* (1987)
 
 ---
 
-### **To the Supporters of Open Ecosystems and Builders of a Collaborative Technology Future,**
+**To the Supporters of Open Ecosystems and Builders of a Collaborative Technology Future,**
 
 When I first interacted with **Large Language Models (LLMs)**, it felt like engaging with microprocessors made of magical silicon that compute intelligence with instructions delivered in natural language. It was clear that computing had crossed a significant threshold. This wasn’t just a technological leap—it marked the beginning of a new paradigm for building computing applications. But with that realization came a critical question: **How can we build an open ecosystem for AI computing** before its utility is locked away in closed ecosystems, as we’ve seen with mobile computing (e.g., the app ecosystem versus the openness of the internet)?
 
