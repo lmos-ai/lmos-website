@@ -44,14 +44,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/lmos-ai/lmos-website',
+            'https://github.com/lmos-ai/lmos-website/edit/main',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/lmos-ai/lmos-website',
+          //editUrl:
+          //  'https://github.com/lmos-ai/lmos-website',
         },
         theme: {
           customCss: './src/css/custom.css',
