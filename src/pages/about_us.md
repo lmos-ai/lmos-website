@@ -96,6 +96,6 @@ Our values lie in the **principles we embody in the systems we design**, just as
 
 Our mission is to bring such a community together—not driven by closed incentives, but by a shared vision of what the future of AI could be. **The journey has just begun.** There is still much to build, and we must move fast. We invite developers, innovators, and visionaries to join us in creating a better future for AI through our **GitHub organization**.
 
-With determination and a shared vision for an open Agent Computing future,
+With unwavering commitment and a united vision for an open Agent Computing future,
 
 [**Arun Joseph**](https://www.linkedin.com/in/arun-joseph-ab47102a/)
