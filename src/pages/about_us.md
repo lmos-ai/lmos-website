@@ -23,7 +23,7 @@ If we wanted to truly scale AI across these domains, we needed more than just ea
 
 **Marvin Minsky’s concept of a "Society of Mind"** had always intrigued me as a brilliant example of distributed intelligent systems design. His vision of intelligence being built from many small, collaborative parts inspired the idea of creating a **multi-agent system**—where individual AI agents work together to tackle complex problems. If built with the same principles that drive the internet and **FOSS movements**, this concept represented the potential to **democratize applied AI development**.
 
-To build something foundational like this would require not just technical skills but brilliant, principled minds working toward a shared goal. And I was privileged to find them right within Telekom. 
+To build something foundational like this would require not just technical skills but brilliant, principled minds working toward a shared goal. I was privileged to find the right team within Telekom—engineers and architects with diverse expertise, ranging from integrating hundreds of device types from various vendors using Web of Things (WoT), to building orchestration engines, operating platforms at scale, and fostering open-source communities.
 
 ### **The Founders and Builders**
 
