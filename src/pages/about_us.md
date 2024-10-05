@@ -38,7 +38,7 @@ To build something foundational like this would require not just technical skill
 **As our vision grew, we were later joined by other brilliant minds, each contributing their unique expertise and passion to push the boundaries of what we could achieve:**
 
 5. [**Patrick Schwager**](https://link-to-patrick-schwager), platform engineer who built and operated IoT platforms at scale;
-6. [**Kai Kreuzer**](https://www.linkedin.com/in/kai-kreuzer-9445294/), creator of the [OpenHAB](http://openHAB.org) home automation OSS ecosystem, who has built an open-source community across the globe towards an open ecosystem for home automation;
+6. [**Kai Kreuzer**](https://www.linkedin.com/in/kai-kreuzer-9445294/), creator of the [openHAB](https://www.openHAB.org) home automation OSS ecosystem, who has built an open-source community across the globe towards an open ecosystem for home automation;
 7. [**Bharat Bhushan**](https://www.linkedin.com/in/bharat-b-8658b6171/), who built platforms of scale in the broadband ecosystem;
 8. [**Rahul Jamwal**](https://www.linkedin.com/in/rahulj111/), a process engineer by heart, who set up our agent development lifecycle and processes;
 9. [**Maximilian Erren**](https://www.linkedin.com/in/maximilian-erren-2b3755292/), a versatile engineer acting as our open-source gatekeeper.
