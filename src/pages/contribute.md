@@ -1,3 +1,7 @@
+---
+title: Contribute
+---
+
 # How to contribute
 
 As we work through the transition of LMOS repositories within Deutsche Telekom to the open-source community, many opportunities for contribution are already available. During this transition, we are actively encouraging developers to get involved in the development of LMOS and its related projects.
@@ -9,4 +13,3 @@ We believe that the open-source community is vital to the success of LMOS. Thatâ
 We aim to create a supportive environment for developers, offering demos, videos and guidance as you learn about LMOS and contribute to its growth. Whether you're skilled in coding, documentation, design, project management, or organizing community events, thereâ€™s valuable work to be done.
 
 We're here to help you on your journey with LMOS!
-

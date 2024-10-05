@@ -20,13 +20,7 @@ const sidebars = {
     "architecture",
     "web_agents",
     "getting_started",
-  ],
-  contributeSidebar: [
-    'contribute',
-  ],
-  aboutUsSidebar: [
-    'about_us',
-  ],
+  ]
 };
 
 export default sidebars;

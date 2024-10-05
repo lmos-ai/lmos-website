@@ -77,22 +77,20 @@ const config = {
             label: 'Documentation',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'aboutUsSidebar',
-            position: 'left',
-            label: 'About us',
+            to: '/about_us', // Link to the markdown page
+            label: 'About us',    // Label in the navbar
+            position: 'right',        // Position of the link (left or right)
+          },
+          {
+            to: '/contribute', // Link to the markdown page
+            label: 'Contribute',    // Label in the navbar
+            position: 'right',        // Position of the link (left or right)
           },
           {
             href: 'https://github.com/lmos-ai',
             label: 'GitHub',
             position: 'right',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'contributeSidebar',
-            position: 'left',
-            label: 'Contribute',
-          },
+          }
         ],
       },
       colorMode: {
