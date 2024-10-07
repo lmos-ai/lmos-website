@@ -59,7 +59,7 @@ We set out to build not just another tool but an **entire ecosystem**—one that
 5. An [**Agent Systems Runtime**](https://github.com/lmos-ai/lmos-runtime) to bootstrap a system composed of agents
 
 
-We developed an **agent development lifecycle** that allowed a pair to build an agent within days including telco systems integration. we bought down steadily the time to develop a  business use case from many weeks of development to 2.5 days (average).
+We developed an **agent development lifecycle** that allowed a pair to build an agent within days including telco systems integration. We brought down steadily the time to develop a  business use case from many weeks of development to 2.5 days (average).
 
 Our platform no longer **binds us to a specific programming language or framework for AI agents**. Instead, it allows us to **work with any AI agent framework**, as we focus on **standardization and agent discovery**—a crucial step toward fostering an **open and interoperable ecosystem**.
 

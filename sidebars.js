@@ -17,8 +17,23 @@ const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   tutorialSidebar: [
     "introduction",
-    "architecture",
-    "web_agents",
+    "agent",
+    "multi_agent_system",
+    {
+      type: 'category',
+      label: 'Architecture',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        'architecture/overview',
+        'architecture/agent_description',
+        'architecture/agent_discovery',
+        'architecture/agent_registry',
+        'architecture/agent_communication',
+        'architecture/group_management'
+
+      ],
+    },
     "getting_started",
   ]
 };

@@ -1,14 +1,13 @@
 ---
-title: Introduction
+title: What is LMOS?
 sidebar_position: 1
 ---
 
-# Introduction
+# What is LMOS?
 
 ## Our vision
-Our vision is to create a **sovereign and open platform and ecosystem for intelligent agents** that enables seamless development, deployment, and integration across networks and industries. This vision is realized by the **LMOS (Language Model Operating System)**, which is built on open standards and tools, allowing organizations to innovate and collaborate without the constraints of closed systems.
-
-Our principles — Openness, Interoperability, Security and Transparency — guide the development of our platform. We believe that systems built on these principles foster collaboration and innovation.
+Our vision is to create a **sovereign and open platform and ecosystem for intelligent agents** that makes it easy to develop, deploy, and connect agents across different networks and industries. <br />
+Our principles — Openness, Interoperability, Security and Transparency — guide the development of this platform. We believe that systems built on these principles foster collaboration and innovation.
 
 **Openness:** Embrace open standards and protocols to foster collaboration, innovation, and accessibility within the intelligent agent ecosystem, over closed proprietary systems that hinder collaboration and innovation.
 
@@ -22,11 +21,11 @@ By aligning our development with these core principles, we aim to create a trust
 
 ## An open multi-agent architecture
 
-In an open multi-agent architecture, the goal is to enable seamless discovery of agent capabilities and services, while ensuring efficient communication between agents across diverse networks. The [W3C Web of Things Architecture](https://www.w3.org/WoT/) provides a strong inspiration for developing an open Web of Agents architecture.
 
+In an open multi-agent architecture, the aim is to make it easy for agents to find each other’s capabilities and services and to communicate efficiently across different networks. <br/>
 The key requirements for an open multi-agent architecture are:
 
-- **Agent Description Specification**  
+- **Agent Description Format**  
    A standardized format is essential for describing the capabilities and metadata of intelligent agents. This specification should offer an appropriate level of abstraction to ensure interoperability across a wide range of agent platforms and domains.
 
 - **Agent Discovery Process**  
@@ -50,8 +49,7 @@ The key requirements for an open multi-agent architecture are:
 
 ## What is LMOS?
 
-**LMOS (Language Model Operating System)** is our attempt to implement an open multi-agent platform and ecosystem, designed to simplify the development, deployment, discovery and management of AI agents in the cloud. Our vision is to create an open, interoperable platform that empowers developers and enterprises to fully leverage AI-driven automation - free from the constraints of vendor lock-in - ensuring flexibility, innovation, and seamless integration across diverse networks.
-
+**LMOS (Language Model Operating System)** is our attempt to implement an open multi-agent platform and ecosystem, designed to simplify the development, deployment, discovery and management of AI agents in the cloud. Our vision is to create an open, interoperable platform that empowers developers and enterprises to fully leverage AI-driven automation - free from the constraints of vendor lock-in - ensuring flexibility, innovation, and seamless integration across diverse networks. <br/>
 The key features of LMOS are:
 
 - **Simplified AI Agent Development:**  
