@@ -45,38 +45,33 @@ LMOS offers a simple yet powerful Kotlin framework called [Agent ReaCtor (ARC)](
 
 ### 2. Agent Registry
 
-The Agent Registry is reusing the Kubernetes Service registry and serves as a centralized hub for storing and managing AI agents' metadata enabling agent discovery and collaboration.
+The **Agent Registry** is reusing the Kubernetes Service registry and serves as a centralized hub for storing and managing AI agents' metadata enabling agent discovery and collaboration.
 
 ### 3&4. LMOS Runtime
 
-The LMOS Runtime orchestrates collaboration between multiple AI agents, similar to how an OS manages processes and assigns tasks.
+The **LMOS Runtime** orchestrates collaboration between multiple AI agents. For now the Runtime can only forward a task to one specific agent, but the supported collaboration modes can be enhanced over time.
 
-It is a component designed to manage and route conversations to the most suitable agents based on their capabilities. It leverages the LMOS Operator and LMOS Router to dynamically resolve and route user queries to the appropriate agents. This project extends the functionalities of the original lmos-operator and lmos-router by integrating them into a cohesive runtime environment.
+The component is designed to manage and route tasks to the most suitable agents based on their capabilities. It leverages the LMOS Operator and LMOS Router to dynamically resolve and distribute tasks to the appropriate agents. This project extends the functionalities of the original lmos-operator and lmos-router by integrating them into a cohesive runtime environment.
 
-The LMOS Runtime directs user queries to an agent based on its capabilities. It fetches the list of all installed agents applicable to the tenant and channel from lmos-operator, and uses lmos-router to dynamically resolve the most appropriate agent for each query. The user queries are then forwarded to the selected agent, and the response is returned to the client.
+The LMOS Runtime fetches the channel routings created by the LMOS Operator, and uses LMOS Router to dynamically resolve the most appropriate agent for each task. The task is then forwarded to the selected agent, and the response is returned to the client.
 
 #### Key Aspects:
-- **Collaborative Multi-Agent Management**: Ensures agents collaborate to resolve complex customer queries.
+- **Collaborative Multi-Agent Management**: Ensures agents collaborate to resolve complex tasks.
 - **Capability-Based Task Assignment**: Dynamically assigns tasks to the most capable agents based on their registered capabilities.
-- **Integration with LMOS Router**: The Runtime works closely with the Router to manage agent task assignments and memory sharing.
+- **Integration with LMOS Operator and Router**: The Runtime works closely with the Operator and Router to manage agent task assignments and memory sharing.
 
 ### 5. LMOS Router
 
-The **LMOS Router** acts as the traffic controller for user queries, ensuring they are routed to the agent with the most relevant capabilities.
+The **LMOS Router** is a vital component of the LMOS architecture. It utilizes agent metadata to identify the most suitable agent for a given task based on their capabilities. The Router supports three methods:
 
 #### Matching Techniques:
-- **LLM-Based Approach**: Uses a language model to understand the semantics of the user query and intelligently match it to agents.
-- **Vector-Based Approach**: Uses vector embeddings (e.g., cosine similarity) to compute the closeness between a query and agent capabilities for fast, large-scale matching.
+- **LLM-based approach:** Uses a language model to understand and match a task with agent capabilities.
+- **Vector-based approach:** Uses semantic similarity to find the most suitable agent for a task.
+- **Hybrid approach:** Extracts abstract requirements from the query using an LLM and then searches for an agent using semantic similarity. 
 
 ### 6. LMOS Operator
 
-The **LMOS Operator** is a Kubernetes operator designed to dynamically resolve Channel requirements based on the capabilities of installed Agents within a Kubernetes cluster (environment).
-
-A “Channel” refers to a digital interface that enables communication between an AI system and its users. Channels can be diverse, such as web, mobile apps, IVR systems, or messaging platforms, each potentially requiring different sets of capabilities.
-
-For instance, a web channel might need a comprehensive set of customer support capabilities, while an IVR channel might only start with a subset of the customer support capabilities. Additionally, the LMOS Operator supports advanced deployment strategies like canary releases, allowing new Agent capabilities to be rolled out gradually to a subset of users within a Channel.
-
-The LMOS Operator enables defining which capabilities should be provided through channels and dynamically resolves which Agents are providing these capabilities. This dynamic resolution ensures that the right capabilities are always available in the Kubernetes cluster (environment).
+The **LMOS Operator** is a Kubernetes operator which extends the Kubernetes Control plane with new custom resource definitions.
 
 #### Key Features:
 - **Dynamic Capability Resolution**: The Operator dynamically resolves which agents have the required capabilities for specific channels (e.g., web, mobile, IVR).

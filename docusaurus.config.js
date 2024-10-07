@@ -107,6 +107,10 @@ const config = {
                 to: '/docs/introduction',
               },
               {
+                label: 'Multi-Agent System',
+                to: '/docs/multi_agent_system/overview',
+              },
+              {
                 label: 'Architecture',
                 to: '/docs/architecture/overview',
               },
@@ -124,6 +128,10 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+    markdown: {
+      mermaid: true,
+    },
+    themes: ['@docusaurus/theme-mermaid'],
     
 };
 

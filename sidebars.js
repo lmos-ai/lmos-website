@@ -18,7 +18,21 @@ const sidebars = {
   tutorialSidebar: [
     "introduction",
     "agent",
-    "multi_agent_system",
+    {
+      type: 'category',
+      label: 'Multi-Agent System',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        'multi_agent_system/overview',
+        'multi_agent_system/agent_description',
+        'multi_agent_system/agent_discovery',
+        'multi_agent_system/agent_registry',
+        'multi_agent_system/agent_communication',
+        'multi_agent_system/group_management'
+
+      ],
+    },
     {
       type: 'category',
       label: 'Architecture',
@@ -26,12 +40,9 @@ const sidebars = {
       collapsed: false,
       items: [
         'architecture/overview',
-        'architecture/agent_description',
-        'architecture/agent_discovery',
-        'architecture/agent_registry',
-        'architecture/agent_communication',
-        'architecture/group_management'
-
+        'architecture/lmos_control_plane',
+        'architecture/lmos_router',
+        'architecture/lmos_runtime'        
       ],
     },
     "getting_started",
