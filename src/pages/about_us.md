@@ -15,7 +15,7 @@ When I first interacted with **Large Language Models (LLMs)**, it felt like enga
 
 It was around the time that I joined Deutsche Telekom's AI task force to explore how **LLMs could be applied to customer sales and service**, The realization was that solving these challenges at scale wasn’t just about meeting immediate business needs , but an opportunity to design a **scalable, interoperable model that embodied the principles of openness** and could create an open ecosystem for AI development—one that would serve as a blueprint for how applied AI systems could evolve across industries and regions.
 
-By mid-2023, the available frameworks for working with LLMs were limited. They offered simple **prompt abstractions** or came with **layers of bloat**, but they couldn’t scale to meet the needs of a large enterprise—especially one operating across 10 countries with multiple languages and varied business units.
+By mid-2023, existing frameworks for LLMs were largely focused on **RAG use cases**, with limited emphasis on the **foundational abstractions needed for scale, concurrency, and modularization**. Building a **robust, layered architecture** was essential to handle the complexity of solving **large-scale use cases across 10 countries**, with **diverse languages, business units, and regulatory requirements**. Drawing on **best practices from complex systems** like **network architectures and operating systems**, we aimed to create a **scalable foundation for multi-agent systems**—beyond mere **use-case-driven development**.
 
 ### **The Vision**
 
