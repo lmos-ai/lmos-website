@@ -94,8 +94,7 @@ const config = {
         ],
       },
       colorMode: {
-        defaultMode: 'dark',
-        respectPrefersColorScheme: true,
+        defaultMode: 'dark'
       },
       footer: {
         style: 'dark',
