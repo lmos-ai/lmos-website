@@ -108,7 +108,7 @@ const config = {
               },
               {
                 label: 'Architecture',
-                to: '/docs/architecture',
+                to: '/docs/architecture/overview',
               },
               {
                 label: 'Getting Started',
