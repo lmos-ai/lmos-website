@@ -1,11 +1,11 @@
 ---
-title: Multi-Agent System
+title: Introduction
 sidebar_position: 1
 ---
 
-# Multi-Agent System
+# Introduction
 
-## What is it?
+## What is a Multi-Agent System?
 
 A Multi-Agent System (MAS) is a system composed of multiple agents that interact with each other to achieve individual and collective goals. Each agent can potentially operate independently, making decisions based on its environment and objectives, while also having the ability to communicate and coordinate with other agents to collaboratively solve complex problems.
 

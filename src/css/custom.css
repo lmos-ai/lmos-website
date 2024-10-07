@@ -80,6 +80,10 @@
   scrollbar-color: #334155 #1E293B;
 }
 
+[data-theme='dark'] strong {
+  color: #FFFFFF;
+}
+
 [data-theme='dark']::-webkit-scrollbar {
   width: 12px;
 }

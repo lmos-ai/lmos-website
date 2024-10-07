@@ -55,7 +55,7 @@ const FeatureList = [
         LMOS is <span className={styles.featuretext}>extensible</span>
       </>
     ),
-    description: 'Extensibility drives innovation. LMOS defines clear specifications, allowing you to quickly extend its ecosystem of agents and tools with minimal friction.',
+    description: 'Extensibility drives innovation. LMOS defines clear specifications, allowing you to quickly extend its ecosystem.',
   },
   {
     Icon: FaBuilding,
