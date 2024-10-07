@@ -13,10 +13,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://lmos-ai.github.io',
+  url: 'https://www.lmos-ai.org',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/lmos-website/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -44,14 +44,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/lmos-ai/lmos-website',
+            'https://github.com/lmos-ai/lmos-website/edit/main',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/lmos-ai/lmos-website',
+          //editUrl:
+          //  'https://github.com/lmos-ai/lmos-website',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -77,22 +77,20 @@ const config = {
             label: 'Documentation',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'aboutUsSidebar',
-            position: 'left',
-            label: 'About us',
+            to: '/about_us', // Link to the markdown page
+            label: 'About us',    // Label in the navbar
+            position: 'right',        // Position of the link (left or right)
+          },
+          {
+            to: '/contribute', // Link to the markdown page
+            label: 'Contribute',    // Label in the navbar
+            position: 'right',        // Position of the link (left or right)
           },
           {
             href: 'https://github.com/lmos-ai',
             label: 'GitHub',
             position: 'right',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'contributeSidebar',
-            position: 'left',
-            label: 'Contribute',
-          },
+          }
         ],
       },
       colorMode: {
