@@ -50,13 +50,13 @@ The [W3C Web of Things (WoT) Architecture](https://www.w3.org/WoT/) can signific
 Web of Things can us help in building an open multi-agent architecture:
 
 1. **Agent Discovery and Description:**
-WoT offers standardized mechanisms for agent discovery and description through its Thing Description (TD) format. This allows agents to express their capabilities and services in a consistent, machine-readable way. By implementing a common protocol like TD, agents in the LMOS framework can broadcast their functionalities dynamically, facilitating real-time discovery by other agents. This capability helps eliminate barriers to integration and enhances collaboration among diverse agents.
+WoT offers standardized mechanisms for agent discovery and description through its Thing Description (TD) format. This allows agents to express their capabilities and services in a consistent, machine-readable way. By implementing a common protocol like TD, agents in the LMOS framework can broadcast their functionalities dynamically, facilitating real-time discovery by other agents. 
 
 2. **Interoperability Across Diverse Networks:**
 WoT uses open standards to ensure interoperability among different devices and services, even when they are implemented on different platforms. Similarly, in an open multi-agent architecture, agents often need to communicate across different platforms and protocols (HTTP, MQTT, WebSockets, etc.). WoT ensures that agents, regardless of their underlying technology or platform, can communicate and collaborate seamlessly across different networks, following open, protocol-agnostic principles.
 
 3. **Dynamic Agent Discovery and Metadata Propagation:**
-In WoT, devices and services can dynamically propagate metadata using protocols like mDNS for local discovery and can register on centralized directories for broader access. In LMOS, this approach can be adapted for agent discovery, where agents dynamically register and propagate their metadata to a centralized Agent Registry for efficient querying. This allows LMOS agents to discover each other in real time based on specific needs or capabilities, similar to how WoT devices discover and interact with services.
+In WoT, devices and services can dynamically propagate metadata using protocols like mDNS for local discovery and can register on centralized directories for broader access. In LMOS, this approach can be adapted for agent discovery, where agents dynamically register and propagate their metadata to a centralized Agent Registry for efficient querying. This allows LMOS agents to discover each other in real time based on specific needs or capabilities.
 
 4. **Security and Trust:**
 WoT places a strong emphasis on secure communication and privacy through security mechanisms that protect data and ensure trustworthiness between devices. In LMOS’s multi-agent system, data privacy and security are paramount. The same WoT security frameworks can be applied to ensure that communication between AI agents remains secure, agents adhere to privacy standards, and sensitive data is protected throughout agent interactions.
@@ -76,124 +76,3 @@ WoT’s interoperability principles allow agents from different domains (e.g., s
 9. **Standardized Testing and Validation:**
 The establishment of common protocols and formats within WoT can enable standardized testing and validation of agents.
 
-### Agent Description example
-
-This example illustrates how a Weather Agent can be modeled using a Thing Description, with HTTP as the primary communication protocol, although alternative protocols may also be utilized. The Agent is secured through Basic Authentication, but other security schemes, such as OAuth2 tokens, can also be used.
-
-```json
-{
-    "@context": [
-        "https://www.w3.org/2022/wot/td/v1.1",
-        {
-            "htv": "http://www.w3.org/2011/http#",
-            "ex": "https://weatherai.example.com",
-        },
-        "https://schema.org/"
-    ],
-    "id": "urn:uuid:6f1d3a7a-1f97-4e6b-b45f-f3c2e1c84c77",
-    "title": "WeatherAgent",
-    "@type": "ex:Agent",
-    "ex:metadata": {
-        "ex:vendor": {
-            "ex:name": "WeatherAI Inc.",
-            "ex:url": "https://weatherai.example.com"
-        },
-        "ex:model": {
-            "ex:name": "gpt-4o",
-            "ex:provider": "Azure"
-        },
-        "ex:serviceIntegration": {
-            "ex:weatherAPI": "OpenWeatherMap",
-            "ex:apiVersion": "v2.5",
-            "ex:apiDocumentation": "https://openweathermap.org/api"
-        },
-        "ex:dataPrivacy": {
-            "ex:dataRetentionPeriod": "30 days",
-            "ex:anonymizationMethod": "HASHING"
-        },
-        "ex:interaction": {
-            "ex:supportedLanguages": ["en_US", "de_DE"],
-            "ex:interactionMode": ["text", "voice"]
-        },
-        "ex:compliance": {
-            "ex:regulatoryCompliance": "GDPR"
-        }
-    },
-    "securityDefinitions": {
-        "basic_sc": {
-            "scheme": "basic",
-            "in": "header"
-        }
-    },
-    "security": "basic_sc",
-    "actions": {
-        "getWeather": {
-            "description": "Fetches weather information based on user input.",
-            "safe": true, //  Used to signal that there is no internal state changed when invoking the action. 
-            "idempotent": false, // Informs whether the Action can be called repeatedly with the same result.
-            "synchronous": true,
-            "input": {
-               "type": "object",
-                "properties": {
-                    "question": {
-                        "type": "string"
-                    },
-                    "interactionMode": {
-                        "type": "string",
-                        "enum": ["text", "voice"]
-                    }
-                },
-                "required": ["question","interactionMode"]
-            },
-            "output": {
-                "type": "string",
-                "description": "Natural language output providing weather information."
-            },            
-            "forms": [
-                {
-                    "op": "invokeaction",
-                    "href": "https://weatherai.example.com/weather",
-                    "contentType": "application/json",
-                    "htv:methodName":"POST"
-                }
-            ]
-        }
-    }
-}
-```
-
-### Node.js example
-
-Here's a simple example of how you can interact with the Weather Agent from a Node.js application using `node-wot`, without needing to know whether it's an AI Agent or a traditional device.
-
-```javascript
-const WoT = require('@node-wot/core');
-const HttpClientFactory = require('@node-wot/binding-http');
-
-async function fetchWeather(question, interactionMode) {
-    try {
-        // Request the Thing Description from the Weather Agent
-        const td = await WoT.requestThingDescription("http://weatheragent.example.com/td");
-        
-        // Consume the Thing Description
-        const thing = await WoT.consume(td);
-
-        // Prepare input parameters for the action
-        const inputParams = {
-            question: question,
-            interactionMode: interactionMode
-        };
-
-        // Invoke the getWeather action
-        const weatherResponse = await thing.invokeAction("getWeather", inputParams);
-        const weatherData = await weatherResponse.value();
-    } catch (err) {
-        console.error("Error fetching weather:", err);
-    }
-}
-
-// Example usage
-const question = 'What is the weather in berlin?'; 
-const interactionMode = 'text';
-fetchWeather(question, interactionMode);
-```

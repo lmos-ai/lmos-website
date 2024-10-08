@@ -4,6 +4,8 @@ title: Group Management
 
 # Group Management
 
+## Problem statement
+
 The architecture should support the creation, management, and dissolution of agent groups, fostering enhanced collaboration, coordination, and trust among agents within the system. Group management offers several key advantages:
 
 * **Security & Trust:** Group management enforces trust relationships, ensuring that only trustworthy agents can join a group. This is crucial for safeguarding sensitive data and ensuring that only trusted agents are allowed to collaborate within the group.
