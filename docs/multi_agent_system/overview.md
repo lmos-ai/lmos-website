@@ -37,9 +37,9 @@ The communication protocol in many frameworks is fixed. For example some framewo
 This limitation can hinder agents that would benefit from real-time communication or lightweight messaging. Some frameworks enforce a fixed request-response pattern, restricting agents to this interaction style and preventing more dynamic communication patterns such as publish-subscribe or event-driven architectures. 
 This forces developers to adopt specific communication patterns that may not align with their needs. 
 
-### Limited Dynamic Team Formation
+### Limited Dynamic Grouping
 
-Existing frameworks often have predefined team structures, which can inhibit the ability of agents to form dynamic teams based on different demands.<br></br>
+Existing frameworks often have predefined groups, which can inhibit the ability of agents to form dynamic groups based on different demands.<br></br>
 This inflexibility means agents may not be able to quickly regroup in response to changing conditions.
 
 
