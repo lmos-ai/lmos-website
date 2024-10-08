@@ -5,13 +5,18 @@ sidebar_position: 1
 
 # What is an Agent?
 
-In the context of LMOS an **agent** is a specialized software program that **uses the capabilities of a machine learning model** to perform specific tasks. For example, an agent can process user input in natural language using an LLM to understand it, then interact with various tools, APIs, or data sources to perform tasks or deliver accurate responses.
+In the context of LMOS an **agent** is a specialized software program that **uses the capabilities of a machine learning model** to perform specific tasks. 
+An agent typically has a clear goal or objective it aims to achieve, which is dependent on the task it's designed to perform. The goal drives how the agent interacts with data, models, or APIs to accomplish its task. 
 
 Some examples:
 
-* A weather agent can understand a natural language request like "What’s the weather today?" and fetch the relevant information from a weather service API.
-* A sales agent might respond to inquiries about product availability by consulting inventory databases.
+* A weather agent's goal is to retrieve and deliver accurate weather information. It can understand natural language queries like "What’s the weather today?" using a large language model (LLM), fetch the relevant data from a weather service API, and present the information back to the user in natural language.
+* A sales agent might respond to inquiries about product availability by fetching data from inventory databases.
 
+Key principles:
+- **Single-Responsibility:** Each agent is created to fulfill a particular purpose or solve a defined problem.
+- **Autonomy:** The agent strives to achieve its goal with minimal human supervision.
+- **Adaptability:** Depending on the environment or feedback, the agent may adjust its behavior to meet its goal more effectively.
 
 But agents can also use other models in addition to Large Language Models (LLMs). While LLMs are great for understanding and generating natural language, agents can also integrate other types of AI models and tools depending on the task. 
 
