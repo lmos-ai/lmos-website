@@ -4,18 +4,18 @@ title: Getting Started
 
 # Getting Started
 
+## Test LMOS locally
+
 The [LMOS Demo](https://github.com/lmos-ai/lmos-demo) serves as a starting point for testing LMOS. While we are still in the process of migrating projects to Open Source and adopting Open Standards, the core concepts are already available for testing. <br />
 The LMOS Demo launches a container that internally sets up Kubernetes (Minikube), along with Istio, Kiali, Grafana, and Prometheus, into which the LMOS components are installed.
 
-## Prerequisites
+**Prerequisites**:
 
 Before you begin, ensure the following tools are installed and running on your local machine:
 
 - [Docker](https://docs.docker.com/get-docker/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Remote - Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-
-## Test LMOS locally
 
 ### 1. Open the Repository in a Dev Container
 
