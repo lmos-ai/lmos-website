@@ -12,13 +12,13 @@ Agent metadata is essential for several reasons:
 * **Discovery:** It allows agents to find each other based on capabilities, making it easier to assemble multi-agent systems for complex tasks.
 * **Interoperability:** By specifying input/output formats and API endpoints, metadata ensures that agents can communicate effectively.
 * **Resource Management:** Information about an agent's resource requirements helps in efficient allocation and deployment.
-* **Version Control:** Version information aids in managing updates and ensuring compatibility between different agent versions.
+* **Version information:** Version information aids in managing updates and ensuring compatibility between different agent versions.
 * **Security:** Metadata about authentication and encryption capabilities helps maintain a secure multi-agent environment.
 * **Autonomy:** With comprehensive metadata, agents can make informed decisions about which other agents to interact with, enhancing the system's autonomy.
 
 ## Web of Things
 
-[W3C Web of Things (WoT)](https://www.w3.org/WoT/) offers standardized mechanisms for agent discovery and description through its Thing Description (TD) format. This allows agents to express their capabilities and services in a consistent, machine-readable way. By implementing a common protocol like TD, agents in the LMOS framework can broadcast their functionalities dynamically, facilitating real-time discovery by other agents.
+[W3C Web of Things (WoT)](https://www.w3.org/WoT/) offers standardized mechanisms for agent discovery and description through its Thing Description (TD) format. This allows agents to express their capabilities and services in a consistent, machine-readable way. 
 
 ### Thing Description example
 
