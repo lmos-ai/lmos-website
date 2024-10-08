@@ -15,9 +15,9 @@ Before you begin, ensure the following tools are installed and running on your l
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Remote - Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-## Setup LMOS locally
+## Test LMOS locally
 
-### Step 1: Open the Repository in a Dev Container
+### 1. Open the Repository in a Dev Container
 
 1. Clone the repository:
     ```shell
@@ -29,7 +29,7 @@ Before you begin, ensure the following tools are installed and running on your l
 
 3. Open the Command Palette (F1 or Ctrl+Shift+P) and select `Remote-Containers: Reopen in Container`. This will build and open the repository in a Docker-based development container.
 
-### Step 2: Set OpenAI Connection Details
+### 2. Set OpenAI Connection Details
 Once inside the development container, set up the necessary environment variables for OpenAI API access in the `.env` and `arc_config.env` files.
 This OpenAPI access is used by the `lmos-runtime` and ARC agents.
 
@@ -49,7 +49,7 @@ ARC_AI_CLIENTS_0_APIKEY=<INSERT KEY HERE>
 ARC_AI_CLIENTS_0_URL=<INSERT URL HERE>
 ```
 
-### Step 3: Check the Setup
+### 3. Check the Setup
 
 To verify the installation of LMOS, run:
 
@@ -132,7 +132,7 @@ And look at a specific channel routing with:
 kubectl get channelrouting acme-web-stable -o yaml
 ```
 
-### Step 4: Access Kiali and Grafana
+### 4. Access Kiali and Grafana
 
 To visualize your setup, various ports have been forwarded for LMOS, Kiali, Prometheus, Jaeger, Grafana and ArgoCD. You can access these tools at
 
@@ -143,7 +143,7 @@ To visualize your setup, various ports have been forwarded for LMOS, Kiali, Prom
 - ArgoCD: http://localhost:3100
 - LMOS Runtime: http://localhost:8081
 
-### Step 5: Execute a POST request
+### 5. Execute a POST request
 
 You can use Postman or the `test_runtime.sh` script to send a test request to the LMOS runtime. 
 The `lmos-runtime` is uses the `lmos-router` to route the request to the appropriate agent.
@@ -162,6 +162,60 @@ Output:
 
 You will see that the weather-agent has responded. 
 
+
+## Deploy LMOS on your Kubernetes cluster
+
+This guides provides instructions to install `lmos-operator` and `lmos-runtime` on your Kubernetes cluster.
+
+**Prerequisites:**
+
+Before proceeding with the installation, ensure you have the following prerequisites:
+
+- Kubernetes cluster (v1.19 or newer).
+- Helm installed (`v3` or newer).
+- Access to the OpenAI API.
+- The `OPENAI_API_KEY` and `OPENAI_API_URL` values should be available.
+
+### 1. Install lmos-operator
+
+To install `lmos-operator` using Helm, run the following command:
+
+```bash
+helm upgrade --install lmos-operator oci://ghcr.io/lmos-ai/lmos-operator-chart \
+  --version 0.0.4-SNAPSHOT
+```
+
+### 2. Create Kubernetes Secret for OpenAI
+
+Next, you need to create a Kubernetes secret that contains your OpenAI API key. Replace "$OPENAI_API_KEY" with your actual OpenAI API key.
+
+```bash
+kubectl create secret generic lmos-runtime --from-literal=OPENAI_API_KEY="$OPENAI_API_KEY"
+```
+
+### 3. Install lmos-runtime
+
+Now, install `lmos-runtime` using Helm. Replace the environment variables with the appropriate values:
+
+- "$OPENAI_API_URL": Your OpenAI API URL (e.g., https://api.openai.com).
+- GPT4o-mini: The desired OpenAI model (in this case, GPT4o-mini).
+
+```bash
+helm upgrade --install lmos-runtime oci://ghcr.io/lmos-ai/lmos-runtime-chart \
+  --version 0.0.8-SNAPSHOT \
+  --set openaiApiUrl="$OPENAI_API_URL" \
+  --set openaiApiModel=GPT4o-mini \
+  --set agentRegistryUrl=http://lmos-operator.default.svc.cluster.local:8080
+```
+
+### 4. Verifying Installation
+To ensure both components are installed and running correctly, use the following commands to check the status of the pods:
+
+```bash
+kubectl get pods
+```
+
+You should see both lmos-operator and lmos-runtime pods in a running state.
 
 ## Develop your own agent
 
