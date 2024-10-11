@@ -30,23 +30,13 @@ Before you begin, ensure the following tools are installed and running on your l
 3. Open the Command Palette (F1 or Ctrl+Shift+P) and select `Remote-Containers: Reopen in Container`. This will build and open the repository in a Docker-based development container.
 
 ### 2. Set OpenAI Connection Details
-Once inside the development container, set up the necessary environment variables for OpenAI API access in the `.env` and `arc_config.env` files.
-This OpenAPI access is used by the `lmos-runtime` and ARC agents.
+Once inside the development container, set up the necessary environment variables for OpenAI API access in the `.env` file.
+This OpenAPI access is used by the `lmos-runtime` and the agents.
 
-#### .env
 ```
-OPENAI_API_KEY="<INSERT KEY HERE>"
-OPENAI_URL="https://gpt4-uk.openai.azure.com"
-OPENAI_MODELNAME="GPT4o-mini"
-```
-
-#### arc_config.env
-```
-ARC_AI_CLIENTS_0_ID=GPT-4o
-ARC_AI_CLIENTS_0_MODELNAME=GPT4o-mini
-ARC_AI_CLIENTS_0_CLIENT=azure
-ARC_AI_CLIENTS_0_APIKEY=<INSERT KEY HERE>
-ARC_AI_CLIENTS_0_URL=<INSERT URL HERE>
+OPENAI_APIKEY="<your-openai-api-key>"
+OPENAI_MODELNAME="gpt-4o-mini"
+OPENAI_URL="https://api.openai.com"
 ```
 
 ### 3. Check the Setup
