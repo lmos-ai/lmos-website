@@ -52,7 +52,7 @@ It was a challenging move. Few in the JVM world were exploring this space( aroun
 
 We set out to build not just another tool but an **entire ecosystem**—one that could handle the complexity of enterprise use cases while being scalable and adaptable. Our journey began with solving business problems, but as we progressed, it became clear that we needed more foundational constructs.  We developed
 
-1. A **"kernel"** the defines the construct to chain deterministic and non-deterministic program modules.
+1. A **"kernel"** that defines the construct to chain deterministic and non-deterministic program modules.
 2. A [**DSL for Agent Development**](https://github.com/lmos-ai/arc) to streamline and democratize agent development.
 3. A [**Agents control plane**](https://github.com/lmos-ai/lmos-operator) for LMOS with Kubernetes as the native runtime for agents, managing the discovery, registration, lifecylce mgmt of agents.
 4. A [**Multi Agent Router**](https://github.com/lmos-ai/lmos-router) to allow agent intent discovery and propagation, enabling multi-strategy agent workflows to be built.
@@ -88,7 +88,7 @@ We believe that, much like **Linux** and the **internet**, LMOS has the potentia
 
 If you look at the parallels, Linux emerged from Europe, and the internet was born at CERN in Switzerland. In that same spirit of innovation, we hope that the foundations we've built for LMOS across **Europe and India** will pave the way for a new era in open and collaborative AI development.
 
-Quoing again Minsky, 
+Quoting again Minsky, 
 
 **"True intelligence is not about singular agents acting alone but about the collaboration between different agents, each doing their specialized task. The art of a great painting is in the great network of relationships among its parts."**
 
