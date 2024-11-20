@@ -42,7 +42,8 @@ const sidebars = {
         'architecture/overview',
         'architecture/lmos_control_plane',
         'architecture/lmos_router',
-        'architecture/lmos_runtime'        
+        'architecture/lmos_runtime',
+        'architecture/agent_reactor'         
       ],
     },
     "getting_started",

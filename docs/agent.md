@@ -6,7 +6,9 @@ sidebar_position: 1
 # What is an Agent?
 
 In the context of LMOS an **agent** is a specialized software program that **uses the capabilities of a machine learning model** to perform specific tasks. 
-An agent typically has a clear goal or objective it aims to achieve, which is dependent on the task it's designed to perform. The goal drives how the agent interacts with data, models, or APIs to accomplish its task. 
+An agent typically has a clear goal or objective it aims to achieve, which is dependent on the task it's designed to perform. The goal drives how the agent interacts with data, models, or APIs to accomplish its task.
+
+In LMOS agents can have a state (properties), can perform actions and emit events. State represents the agent’s current configuration or context. Actions define the tasks the agent can perform, making it interactive and task-oriented. Events allow the agent to proactively notify users or systems of significant changes. 
 
 Some examples:
 
@@ -14,6 +16,7 @@ Some examples:
 * A sales agent might respond to inquiries about product availability by fetching data from inventory databases.
 
 Key principles:
+- **Identifiable**: Each agent has a unique identifier.
 - **Single-Responsibility:** Each agent is created to fulfill a particular purpose or solve a defined problem.
 - **Autonomy:** The agent strives to achieve its goal with minimal human supervision.
 - **Adaptability:** Depending on the environment or feedback, the agent may adjust its behavior to meet its goal more effectively.
