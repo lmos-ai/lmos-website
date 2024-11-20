@@ -1,6 +1,6 @@
 ---
 title: What is an Agent?
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 # What is an Agent?
