@@ -27,7 +27,10 @@ Before you begin, ensure the following tools are installed and running on your l
 
 2. Open the repository in Visual Studio Code:
 
-3. Open the Command Palette (F1 or Ctrl+Shift+P) and select `Remote-Containers: Reopen in Container`. This will build and open the repository in a Docker-based development container.
+3. Open the Command Palette (F1 or Ctrl+Shift+P on Windows, Shift+Command+P on Mac) and select `Remote-Containers: Reopen in Container`. This will build and open the repository in a Docker-based development container.
+(Please note:
+a. If you are unable to find the option 'Remote-Containers: Reopen in Container' in Command Palette then use 'Dev Containers: Rebuild Container'
+b. Default memory allocated is 8 gigs, if you are facing any container boot issue related to memory then you may reduce this allocated memory by updating memory parameter available in 'runArgs' in 'devcontainer.json' file)  
 
 ### 2. Set OpenAI Connection Details
 Once inside the development container, set up the necessary environment variables for OpenAI API access in the `.env` file.
