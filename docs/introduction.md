@@ -6,8 +6,8 @@ sidebar_position: 1
 # What is LMOS?
 
 ## Our vision
-Our vision is to create a **sovereign and open platform and ecosystem for intelligent agents** that makes it easy to develop, deploy, and connect agents across different networks and industries. <br />
-Our principles — Openness, Interoperability, Security and Transparency — guide the development of this platform. We believe that systems built on these principles foster collaboration and innovation.
+Our vision is to create a **sovereign and open platform and ecosystem for intelligent agents** that makes it easy to develop, deploy, and connect agents across different networks and industries, regardless of the language or framework used for their implementation. <br />
+Our principles — **Openness, Interoperability, Security and Transparency** — guide the development of this platform. We believe that systems built on these principles foster collaboration and innovation.
 
 **Openness:** Embrace open standards and protocols to foster collaboration, innovation, and accessibility within the intelligent agent ecosystem, over closed proprietary systems that hinder collaboration and innovation.
 
@@ -53,10 +53,10 @@ The key requirements for an open multi-agent architecture are:
 The key features of LMOS are:
 
 - **Simplified AI Agent Development:**  
-   LMOS abstracts the intricacies of large language models (LLMs), memory management, and tool integration. Just as an operating system manages applications and hardware, LMOS acts as a virtual "OS" for AI agents, allowing developers to focus on creating intelligent, adaptable agents without getting bogged down by backend complexity.
+   LMOS provides a framework called [Agent ReaCtor (ARC)](https://lmos-ai.github.io/arc/) to abstract the intricacies of large language models (LLMs), memory management, and tool integration. Just as an operating system manages applications and hardware, the LMOS framework acts as a virtual "OS" for AI agents, allowing developers to focus on creating intelligent, adaptable agents without getting bogged down by infrastructure complexity.
 
 - **Open, Interoperable Architecture:**  
-   Built on the principles of openness and interoperability, LMOS supports seamless integration of AI agents across diverse platforms and networks. By embracing open standards, LMOS ensures that agents from various systems can communicate, share knowledge, and collaborate, fostering innovation across industries.
+   Built on the principles of openness and interoperability, LMOS supports seamless integration of AI agents across diverse platforms and networks. By embracing open standards, LMOS ensures that agents from various platforms can communicate, share knowledge, and collaborate, fostering innovation across industries. You can leverage LMOS’s multi-agent capabilities with frameworks like Agent ReaCtor (ARC), Langchain4j, LlamaIndex or LangChain, seamlessly integrating them into the LMOS platform without being tied to a specific development language or framework. 
 
 - **Agent Lifecycle Management:**  
    LMOS enables real-world deployment strategies, such as canary releases and advanced routing techniques based on Natural Language Understanding (NLU). These features allow enterprises to introduce new agent features incrementally, ensuring stability and reducing risk during updates.

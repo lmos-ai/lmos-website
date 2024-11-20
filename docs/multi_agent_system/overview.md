@@ -59,11 +59,8 @@ In WoT, devices and services can dynamically propagate metadata using protocols 
 ### Security and Trust
 WoT places a strong emphasis on secure communication and privacy through security mechanisms that protect data and ensure trustworthiness between devices. In LMOS’s multi-agent system, data privacy and security are paramount. The same WoT security frameworks can be applied to ensure that communication between AI agents remains secure, agents adhere to privacy standards, and sensitive data is protected throughout agent interactions.
 
-### Group Management and Collaboration
-WoT allows for the grouping and orchestration of multiple devices into larger systems to perform more complex tasks. In an open multi-agent system, this principle can be applied to group management, where LMOS agents form dynamic teams to collaboratively solve complex problems. Agents can establish trust relationships within these groups, much like how WoT devices can be securely managed in clusters or "webs" of things.
-
 ### Extensibility and Flexibility
-Both WoT and LMOS prioritize extensibility and flexibility in their architectures. WoT's design allows for the easy addition of new devices or services without disrupting existing functionalities. Similarly, LMOS’s modular architecture supports the integration of new agents or tools without requiring extensive system overhauls. This flexibility fosters an adaptable ecosystem that can evolve with emerging technologies and changing user needs.
+WoT's architecture allows for the easy addition of new Thing types. Similarly, LMOS’s architecture supports the integration of new agent types without requiring extensive system overhauls. This flexibility fosters an adaptable ecosystem that can evolve with emerging technologies and changing user needs.
 
 ### Adaptive Communication Patterns
 WoT supports various interaction patterns, including request-response, event-driven, and publish-subscribe models. By incorporating these adaptive communication patterns, multi-agent systems can allow agents to choose the most suitable method for their interactions based on specific tasks and contexts. This flexibility enhances collaboration efficiency.
