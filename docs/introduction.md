@@ -22,7 +22,7 @@ By aligning our development with these core principles, we aim to create a trust
 ## An open multi-agent architecture
 
 
-In an open multi-agent architecture, the aim is to make it easy for agents to find each other’s capabilities and services and to communicate efficiently across different networks. <br/>
+In an open multi-agent architecture, the goal is to enable agents to easily discover each other’s capabilities and services and to communicate efficiently across different networks, regardless of the language or framework used for their implementation. <br/>
 The key requirements for an open multi-agent architecture are:
 
 - **Agent Description Format**  
