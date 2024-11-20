@@ -9,7 +9,7 @@ sidebar_position: 1
 
 LMOS (Language Model Operating System) currently addresses the **application layer**, focusing on **AI agent collaboration and lifecycle management** in the cloud-native environment. 
 
-![LMOS](../assets/LMOS_1.png)
+![LMOS](../assets/lmos-overview.png)
 
 
 ### 1. Kubernetes for Orchestration & Scalability
@@ -25,7 +25,7 @@ Security:
    * mTLS (Mutual TLS): Istio secures inter-agent communication with mTLS, ensuring that agents communicate over encrypted channels.
    * Role-Based Access Control (RBAC): Istio enforces access control, ensuring only authorized agents can interact with other AI agents.
 
-### 3. LMOS Control Plan for Agent Lifecycle Management
+### 3. LMOS Control Plane for Agent Lifecycle Management
 
 LMOS Control Plane extends Kubernetes, adding custom logic for AI agent orchestration such as Agent traffic routing and Tenant/Channel management .
 
@@ -37,7 +37,7 @@ ArgoCD and Argo Rollouts implement GitOps workflows to automate the deployment o
 
 To realize its vision of simplifying AI agent development, LMOS introduces several core components:
 
-![LMOS](../assets/LMOS_2.png)
+![LMOS](../assets/lmos-detail.png)
 
 ### 1. Agent ReaCtor
 
