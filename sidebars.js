@@ -29,8 +29,8 @@ const sidebars = {
         'multi_agent_system/agent_discovery',
         'multi_agent_system/agent_registry',
         'multi_agent_system/agent_communication',
-        'multi_agent_system/group_management'
-
+        'multi_agent_system/group_management',
+        'multi_agent_system/agent_lifecycle'
       ],
     },
     {

@@ -19,7 +19,7 @@ const FeatureList = [
         LMOS is <span className={styles.featuretext}>interoperable</span>
       </>
     ),
-    description: 'Built for a interoperable agent ecosystem, LMOS leverages established open standards for agent communication, meta discovery, and security, eliminating the need to reinvent the wheel.',
+    description: 'Built for a interoperable agent ecosystem, LMOS leverages established open W3C standards for agent meta data description, discovery and communication across network boundaries.',
   },
   {
     Icon: FaUsers,
@@ -28,7 +28,7 @@ const FeatureList = [
         LMOS is <span className={styles.featuretext}>collaborative</span>
       </>
     ),
-    description: 'AI agent collaboration improves problem-solving by harnessing the strengths of multiple models, boosting accuracy, efficiency, and adaptability. LMOS orchestrates these interactions with advanced routing based on Natural Language Understanding (NLU), allowing agents to work together seamlessly within a single, unified system.',
+    description: 'AI agent collaboration improves problem-solving. LMOS orchestrates these interactions with advanced routing based on Natural Language Understanding (NLU), allowing agents to work together seamlessly within a single, unified system.',
   },
   {
     Icon: FaCloud,
@@ -37,7 +37,7 @@ const FeatureList = [
         LMOS is <span className={styles.featuretext}>cloud-native and scalable</span>
       </>
     ),
-    description: 'As your AI needs grow, LMOS grows with you. Its cloud-native architecture dynamically scales from a few agents to hundreds, ensuring seamless performance without bottlenecks as your AI operations expand.',
+    description: 'As your AI needs grow, LMOS grows with you. Its cloud-native architecture dynamically scales from a few agents to hundreds, ensuring seamless performance as your AI operations expand.',
   },
   {
     Icon: FaPuzzlePiece,
@@ -46,7 +46,7 @@ const FeatureList = [
         LMOS is <span className={styles.featuretext}>modular</span>
       </>
     ),
-    description: 'LMOS is built with modularity at its core, allowing you to easily integrate new modules in your preferred development language, making customization and expansion straightforward.',
+    description: 'LMOS is built with modularity at its core, allowing you to easily integrate new Agents in your preferred development language or framework.',
   },
   {
     Icon: FaLayerGroup,
@@ -64,7 +64,7 @@ const FeatureList = [
         LMOS is <span className={styles.featuretext}>multi-tenant capable</span>
       </>
     ),
-    description: 'Built with enterprises in mind, LMOS is multi-tenant capable from the ground up. LMOS allows to efficiently manage multiple tenants and channels within the same infrastructure.',
+    description: 'Built with enterprises in mind, LMOS is multi-tenant capable from the ground up. LMOS allows to efficiently manage multiple tenants and agent groups within the same infrastructure.',
   },
 ];
 
