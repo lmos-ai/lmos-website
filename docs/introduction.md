@@ -21,7 +21,6 @@ By aligning our development with these core principles, we aim to create a trust
 
 ## An open multi-agent architecture
 
-
 In an open multi-agent architecture, the goal is to enable agents to easily discover each other’s capabilities and services and to communicate efficiently across different networks, regardless of the language or framework used for their implementation. <br/>
 The key requirements for an open multi-agent architecture are:
 
@@ -75,3 +74,9 @@ The key features of LMOS are:
 
 By promoting an open, scalable, and interoperable architecture, **LMOS** enables the development of next-generation AI agents that can seamlessly integrate and collaborate across diverse environments, paving the way for a truly connected and intelligent future.
 
+## What's the name's origin?
+
+The name **LMOS** stands for **Language Model Operating System**. Just as an operating system manages hardware and software resources, LMOS manages AI agents, providing a virtual environment for agents to interact, share knowledge, and collaborate. LMOS abstracts the complexities of large language models (LLMs) and memory management, allowing developers to focus on building intelligent agents without worrying about backend infrastructure. By providing a unified platform for AI agent development, deployment, and management, LMOS acts as a bridge between developers, data scientists, and product managers, enabling seamless collaboration and innovation in the AI ecosystem.
+
+![Operating System Analogy](./assets/os-analogy-light.png#light-mode-only)
+![Operating System Analogy](./assets/os-analogy-dark.png#dark-mode-only)
