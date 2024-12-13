@@ -76,7 +76,6 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: 'blog', label: 'Blog', position: 'right'},
           {
             to: '/about_us', // Link to the markdown page
             label: 'About us',    // Label in the navbar
