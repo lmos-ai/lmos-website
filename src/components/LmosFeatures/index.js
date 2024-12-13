@@ -91,7 +91,7 @@ const FeatureList = [
             <p>
               LMOS is an <strong>open-source, sovereign, vendor-neutral platform</strong> to build and run enterprise-ready <strong>multi-agent systems on cloud or on-prem</strong>.
               <br /> <br />
-              Our vision is to create a sovereign and open platform and ecosystem where AI agents can be developed, deployed, and integrated seamlessly across networks and industries.
+              Our vision is to create a sovereign and open platform and ecosystem where AI agents can be developed, deployed, and integrated seamlessly across networks and platforms.
               Built on top of open standards and Kubernetes, it enables developers to build intelligent, scalable, and adaptive multi-agent systems.
             </p>
             <img src="/img/lmos-overview.png" alt="LMOS Overview" />

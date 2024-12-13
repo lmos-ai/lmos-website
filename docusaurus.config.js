@@ -76,6 +76,7 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
+          {to: 'blog', label: 'Blog', position: 'right'},
           {
             to: '/about_us', // Link to the markdown page
             label: 'About us',    // Label in the navbar
@@ -85,6 +86,11 @@ const config = {
             to: '/contribute', // Link to the markdown page
             label: 'Contribute',    // Label in the navbar
             position: 'right',        // Position of the link (left or right)
+          },
+          {
+            href: 'https://www.youtube.com/@lmos-ai',
+            label: 'Youtube',
+            position: 'right',
           },
           {
             href: 'https://github.com/lmos-ai',
