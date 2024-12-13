@@ -76,7 +76,7 @@ By promoting an open, scalable, and interoperable architecture, **LMOS** enables
 
 ## What's the name's origin?
 
-The name **LMOS** stands for **Language Model Operating System**. Just as an operating system manages hardware and software resources, LMOS manages AI agents, providing a virtual environment for agents to interact, share knowledge, and collaborate. LMOS abstracts the complexities of large language models (LLMs) and memory management, allowing developers to focus on building intelligent agents without worrying about backend infrastructure. By providing a unified platform for AI agent development, deployment, and management, LMOS acts as a bridge between developers, data scientists, and product managers, enabling seamless collaboration and innovation in the AI ecosystem.
+The name **LMOS** stands for **Language Model Operating System**. Just as an operating system abstracts hardware and manages software applications, LMOS abstracts reduces the complexity to develop AI Agents by providing APIs and libraries to interact with infrastructure and tools to manage the lifecycle of AI Agents. 
 
 ![Operating System Analogy](./assets/os-analogy-light.png#light-mode-only)
 ![Operating System Analogy](./assets/os-analogy-dark.png#dark-mode-only)
